@@ -34,7 +34,7 @@ import CoreServicesSection from "../components/sections/homesections/CoreService
 import IndustriesSection from "../components/sections/homesections/IndustriesSection";
 import ProjectExcellenceSection from "../components/sections/homesections/ProjectExcellenceSection";
 import TestimonialsSection from "../components/sections/homesections/TestimonialsSection";
-import CtaSection from '../components/CtaSection';
+// import CtaSection from '../components/CtaSection';
 
 const Home = () => {
   // Slider images array
@@ -92,7 +92,7 @@ const Home = () => {
       <TestimonialsSection />
       
       {/* CTA Section - appears on all pages */}
-      <CtaSection />
+      {/* <CtaSection /> */}
 
     </div>
   );

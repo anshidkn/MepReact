@@ -29,7 +29,7 @@ import ProjectDetailContent from "../components/sections/projectssections/Projec
 import ProjectDetailScope from "../components/sections/projectssections/ProjectsDetailSections/ProjectDetailScope";
 import ProjectDetailHighlights from "../components/sections/projectssections/ProjectsDetailSections/ProjectDetailHighlights";
 import ProjectDetailGallery from "../components/sections/projectssections/ProjectsDetailSections/ProjectDetailGallery";
-import ProjectsCtaSection from '../components/ProjectsctaSection';
+// import ProjectsCtaSection from '../components/ProjectsctaSection';
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -540,7 +540,8 @@ const ProjectDetails = () => {
       />
 
       {/* CTA Section */}
-      <ProjectsCtaSection />
+      {/* <ProjectsCtaSection /> */}
+
     </div>
   );
 };

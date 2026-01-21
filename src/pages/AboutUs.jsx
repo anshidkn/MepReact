@@ -24,7 +24,7 @@ import MepSolutionsSection from "../components/sections/aboutsections/MepSolutio
 import MissionVisionValuesSection from "../components/sections/aboutsections/MissionVisionValuesSection";
 import NumbersTrustSection from "../components/sections/aboutsections/NumbersTrustSection";
 import SafetyQualitySection from "../components/sections/aboutsections/SafetyQualitySection";
-import CtaSection from '../components/CtaSection';
+// import CtaSection from '../components/CtaSection';
 
 const AboutUs = () => {
   return (
@@ -75,7 +75,7 @@ const AboutUs = () => {
       />
 
       {/* CTA Section - appears on all pages */}
-      <CtaSection />
+      {/* <CtaSection /> */}
 
     </div>
   );
