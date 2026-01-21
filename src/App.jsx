@@ -21,7 +21,7 @@ import ContactUs from './pages/ContactUs';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/MepReact">
       <div className="app">
         {/* Navbar - appears on all pages */}
         <Navbar />
