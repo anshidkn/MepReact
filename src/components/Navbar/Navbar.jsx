@@ -144,6 +144,9 @@ const Navbar = () => {
           Projects
         </Link>
 
+        <Link to="/careers" className={isActive('/careers') ? 'active' : ''}>
+          Careers
+        </Link>
         <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>
           Contact Us
         </Link>
