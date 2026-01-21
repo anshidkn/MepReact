@@ -1,0 +1,357 @@
+.mvv-section {
+  background-color: #1a1a1a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Shared Block Styles */
+.mvv-block {
+  padding: 60px 20px;
+}
+
+/* Mission Container */
+.mvv-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mvv-container-mission {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 60px 60px 0 60px;
+  padding: 30px;
+}
+
+/* Vision Container */
+.mvv-container-vision {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 60px 60px 60px 0;
+  padding: 30px;
+}
+
+/* Image Wrapper */
+.mvv-image-wrapper {
+  flex: 0 0 420px;
+  overflow: hidden;
+}
+
+.mvv-image-wrapper-mission {
+  padding: 0;
+}
+
+.mvv-image-wrapper-vision {
+  padding: 0;
+}
+
+/* Images */
+.mvv-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.mvv-image-mission {
+  border-radius: 40px 40px 0 40px;
+}
+
+.mvv-image-vision {
+  border-radius: 40px 40px 40px 0;
+}
+
+/* Content */
+.mvv-content {
+  flex: 1;
+  color: #fff;
+}
+
+.mvv-content-mission {
+  padding-right: 20px;
+}
+
+.mvv-content-vision {
+  padding-left: 20px;
+}
+
+.mvv-title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+
+.text-red {
+  color: #c41e3a;
+}
+
+.mvv-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #fff;
+  margin: 0;
+}
+
+/* Core Values */
+.mvv-values {
+  padding: 60px 20px 80px;
+}
+
+.mvv-values-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 60px;
+  padding: 50px 40px;
+}
+
+.mvv-values-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mvv-values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mvv-value-item {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.mvv-value-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.mvv-value-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #a0a0a0;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mvv-container {
+    gap: 25px;
+  }
+
+  .mvv-container-mission,
+  .mvv-container-vision {
+    padding: 25px;
+  }
+
+  .mvv-image-wrapper {
+    flex: 0 0 350px;
+  }
+
+  .mvv-image {
+    height: 260px;
+  }
+
+  .mvv-title {
+    font-size: 36px;
+  }
+
+  .mvv-description {
+    font-size: 16px;
+  }
+
+  .mvv-values-container {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mvv-block {
+    padding: 50px 15px;
+  }
+
+  .mvv-container-mission,
+  .mvv-container-vision {
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 25px;
+  }
+
+  .mvv-image-wrapper {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .mvv-image {
+    height: 240px;
+  }
+
+  .mvv-image-mission,
+  .mvv-image-vision {
+    border-radius: 30px;
+  }
+
+  .mvv-content {
+    text-align: center;
+  }
+
+  .mvv-content-mission,
+  .mvv-content-vision {
+    padding: 0;
+  }
+
+  .mvv-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .mvv-description {
+    font-size: 15px;
+  }
+
+  .mvv-values-container {
+    border-radius: 40px;
+    padding: 35px 25px;
+  }
+
+  .mvv-value-item {
+    padding: 20px 25px;
+    border-radius: 16px;
+  }
+
+  .mvv-value-title {
+    font-size: 18px;
+  }
+
+  .mvv-value-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mvv-block {
+    padding: 40px 15px;
+  }
+
+  .mvv-container-mission{
+    padding: 20px;
+    border-radius: 60px 60px 0 60px;
+  }
+  .mvv-container-vision {
+    padding: 20px;
+    border-radius: 60px 60px 60px 0px;
+  }
+
+  .mvv-image-wrapper {
+    max-width: 100%;
+  }
+
+  .mvv-image {
+    height: 200px;
+  }
+
+  .mvv-image-mission{
+    border-radius: 20px;
+    border-radius: 60px 60px 0 60px;
+  }
+
+  .mvv-image-vision {
+    border-radius: 20px;
+    border-radius: 60px 60px 60px 0px;
+  }
+
+  .mvv-title {
+    font-size: 26px;
+  }
+
+  .mvv-description {
+    font-size: 14px;
+  }
+
+  .mvv-values {
+    padding: 40px 15px 60px;
+  }
+
+  .mvv-values-container {
+    border-radius: 30px;
+    padding: 30px 20px;
+  }
+
+  .mvv-values-title {
+    margin-bottom: 30px;
+  }
+
+  .mvv-value-item {
+    padding: 18px 20px;
+    border-radius: 14px;
+  }
+
+  .mvv-value-title {
+    font-size: 16px;
+  }
+
+  .mvv-value-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mvv-block {
+    padding: 30px 10px;
+  }
+
+  .mvv-container-mission{
+    padding: 15px;
+    border-radius: 40px 40px 0 40px;
+  }
+  .mvv-container-vision {
+    padding: 15px;
+    border-radius: 40px 40px 40px 0;
+  }
+
+  .mvv-image {
+    height: 180px;
+  }
+
+  .mvv-image-mission{
+    border-radius: 40px 40px 0 40px;
+  }
+  .mvv-image-vision {
+    border-radius: 40px 40px 40px 0;
+  }
+
+  .mvv-title {
+    font-size: 22px;
+  }
+
+  .mvv-description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .mvv-values-container {
+    border-radius: 24px;
+    padding: 25px 15px;
+  }
+
+  .mvv-value-item {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .mvv-value-title {
+    font-size: 15px;
+  }
+
+  .mvv-value-description {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,261 @@
+/* ServicesHeroSection.css */
+
+.services-hero {
+  position: relative;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 40px;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.services-hero-title {
+  color: #fff;
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+.services-hero-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #c41e3a;
+}
+
+/* ================= TABS WRAPPER ================= */
+
+.services-tabs-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.services-tabs {
+  display: inline-flex;
+  background: #ffffff;
+  border-radius: 999px;
+  overflow: visible;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Tab */
+.services-tab {
+  position: relative;
+  padding: 20px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* Divider line */
+.services-tab:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: #e0e0e0;
+}
+
+/* Active tab */
+.services-tab.active {
+  background-image: url("/src/assets/red_diamond.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.services-tab.active-first {
+  border-radius: 999px 0 0 999px;
+}
+
+/* Middle tab active - no radius */
+.services-tab.active-middle {
+  border-radius: 0;
+}
+
+/* Last tab active - rounded right only */
+.services-tab.active-last {
+  border-radius: 0 999px 999px 0;
+}
+
+
+/* Hover */
+.services-tab:hover:not(.active) {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .services-tab {
+    padding: 16px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .services-hero {
+    min-height: 380px;
+    padding: 50px 15px 35px;
+  }
+
+  .services-tabs-wrapper {
+    margin-top: 35px;
+  }
+
+  .services-tabs {
+    flex-wrap: wrap;
+    border-radius: 20px;
+    max-width: 550px;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .services-tab {
+    padding: 12px 16px;
+    font-size: 11px;
+    border-radius: 30px;
+  }
+
+  .services-tab::after {
+    display: none;
+  }
+
+  .services-tab.active {
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    min-height: 350px;
+    padding: 45px 15px 30px;
+  }
+
+  .services-hero-title {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+  }
+
+  .services-hero-title::after {
+    height: 3px;
+  }
+
+  .services-tabs-wrapper {
+    margin-top: 30px;
+  }
+
+  .services-tabs {
+    max-width: 480px;
+    gap: 5px;
+    padding: 8px;
+    border-radius: 16px;
+  }
+
+  .services-tab {
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-hero {
+    min-height: 320px;
+    padding: 40px 10px 25px;
+  }
+
+  .services-hero-title {
+    font-size: 28px;
+  }
+
+  .services-tabs {
+    max-width: 100%;
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .services-tab {
+    padding: 9px 12px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero {
+    min-height: 300px;
+    padding: 35px 10px 20px;
+  }
+
+  .services-hero-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .services-tabs-wrapper {
+    margin-top: 25px;
+  }
+
+  .services-tabs {
+    border-radius: 14px;
+    gap: 4px;
+    padding: 5px;
+  }
+
+  .services-tab {
+    padding: 8px 10px;
+    font-size: 8px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .services-hero-title {
+    font-size: 22px;
+  }
+
+  .services-tabs {
+    gap: 3px;
+    padding: 4px;
+  }
+
+  .services-tab {
+    padding: 7px 8px;
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,149 @@
+.projects-intro-section {
+  padding: 60px 0 80px;
+  background: #fff;
+}
+
+.projects-intro-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.projects-intro-label {
+  display: inline-block;
+  font-size: 30px;
+  color: #565656;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.projects-intro-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  /* max-width: 800px; */
+  color: #101010;
+  margin: 0 0 20px 0;
+}
+
+.projects-intro-title .text-red {
+  color: #c41e3a;
+  font-style: italic;
+}
+
+.projects-intro-description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.projects-intro-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  /* max-width: 900px; */
+  margin: 0 auto;
+}
+
+.projects-intro-image {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.projects-intro-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .projects-intro-title {
+    font-size: 30px;
+  }
+
+  .projects-intro-image img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-intro-section {
+    padding: 50px 0 60px;
+  }
+
+  .projects-intro-images {
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .projects-intro-image img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-intro-section {
+    padding: 40px 0 50px;
+  }
+
+  .projects-intro-container {
+    padding: 0 15px;
+  }
+
+  .projects-intro-label {
+    font-size: 20px;
+  }
+
+  .projects-intro-title {
+    font-size: 26px;
+  }
+
+  .projects-intro-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .projects-intro-image img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-intro-section {
+    padding: 30px 0 40px;
+  }
+
+  .projects-intro-label {
+    font-size: 15px;
+  }
+
+  .projects-intro-title {
+    font-size: 22px;
+  }
+
+  .projects-intro-description {
+    font-size: 13px;
+  }
+
+  .projects-intro-images {
+    gap: 15px;
+  }
+
+  .projects-intro-image img {
+    height: 180px;
+  }
+
+  .projects-intro-image {
+    border-radius: 12px;
+  }
+}

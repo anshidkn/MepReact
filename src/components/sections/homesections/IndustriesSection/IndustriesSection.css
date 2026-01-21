@@ -1,0 +1,269 @@
+.industries-section {
+  padding: 50px 0;
+  background-image: url("/src/assets/industries_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.industries-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.industries-section > div {
+  position: relative;
+  z-index: 1;
+}
+
+.industries-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.industries-section .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.industries-section .section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  /* margin-bottom: 15px; */
+}
+
+.industries-section .section-header h2 span {
+  color: #B20E29;
+}
+
+.industries-section .section-header p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Auto-scroll carousel container */
+.industries-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Scrolling track */
+.industries-carousel-track {
+  display: flex;
+  gap: 45px;
+  animation: scrollCarousel 30s linear infinite;
+  width: max-content;
+  padding: 10px 20px 50px 20px;
+}
+
+.industries-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Industry Card */
+.industry-card {
+  position: relative;
+  flex-shrink: 0;
+  width: 300px;
+  overflow: visible;
+}
+
+.industry-card-image {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.industry-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover .industry-card-image img {
+  transform: scale(1.05);
+}
+
+/* Ribbon Label Container */
+.industry-card-label-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Label */
+.industry-card-label {
+  position: relative;
+  width: 100%;
+  min-height: 75px;
+  background: linear-gradient(135deg, #B20E29 0%, #7E1222 100%);
+  color: #fff;
+  padding: 16px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(178, 14, 41, 0.35);
+}
+
+/* Folded corners container */
+.industry-card-label-folds {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -1px;
+}
+
+/* Left fold triangle */
+.fold-left {
+  width: 15px;
+  height: 15px;
+  background: #5a0a15;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+/* Right fold triangle */
+.fold-right {
+  width: 15px;
+  height: 15px;
+  background: #5a0a15;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+/* Line break styling */
+.industry-card-label span {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .industries-section {
+    padding: 40px 0;
+  }
+
+  .industries-section .section-header h2 {
+    font-size: 30px;
+  }
+
+  .industry-card {
+    width: 280px;
+  }
+
+  .industry-card-image {
+    height: 300px;
+  }
+
+  .industry-card-label {
+    font-size: 15px;
+    padding: 14px 20px;
+    min-height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .industries-section {
+    padding: 30px 0;
+  }
+
+  .industries-section .section-header h2 {
+    font-size: 28px;
+  }
+
+  .industries-section .section-header p {
+    font-size: 14px;
+  }
+
+  .industry-card {
+    width: 260px;
+  }
+
+  .industry-card-image {
+    height: 280px;
+  }
+
+  .industry-card-label {
+    font-size: 14px;
+    padding: 12px 18px;
+    min-height: 65px;
+  }
+
+  .industries-carousel-track {
+    gap: 45px;
+    animation-duration: 25s;
+  }
+
+  .fold-left,
+  .fold-right {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-section {
+    padding: 20px 0;
+  }
+
+  .industries-section .section-header h2 {
+    font-size: 24px;
+  }
+
+  .industry-card {
+    width: 240px;
+  }
+
+  .industry-card-image {
+    height: 260px;
+  }
+
+  .industry-card-label {
+    font-size: 13px;
+    padding: 10px 15px;
+    min-height: 60px;
+  }
+
+  .industry-card-label-wrapper {
+    width: calc(100% + 24px);
+  }
+
+  .industries-carousel-track {
+    gap: 35px;
+    animation-duration: 20s;
+    padding-bottom: 45px;
+  }
+
+  .fold-left,
+  .fold-right {
+    width: 10px;
+    height: 10px;
+  }
+}

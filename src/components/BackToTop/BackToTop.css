@@ -1,0 +1,71 @@
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #B20E29 0%, #7E1222 100%);
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 15px rgba(178, 14, 41, 0.4); */
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: linear-gradient(135deg, #c41e3a 0%, #8B0000 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(178, 14, 41, 0.5);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}
+
+.back-to-top svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .back-to-top svg {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,219 @@
+.core-services-section {
+  background: #1a1a1a;
+  padding: 80px 0;
+  color: white;
+}
+
+.core-services-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.core-services-section .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.core-services-section .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.core-services-section .section-title h2 span {
+  color: #c41e3a;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Service Card - Figma Style */
+.service-card {
+  position: relative;
+  background: linear-gradient(135deg, #B20E29 0%, #7E1222 100%);
+  color: white;
+  padding: 21px 16px 24px;
+  margin-bottom: 30px;
+  box-shadow: none;
+  border: none;
+  overflow: visible;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background: #ffff;
+  clip-path: polygon(115% 0, 0 140%, 100% 100%);
+}
+
+/* Top Row: Image + Heading */
+.service-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+/* Service Card Image */
+.service-card-img {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 6px;
+  margin-top: -45px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
+}
+
+.service-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Service Card Title */
+.service-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.service-card-subtitle {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* Service Card Description */
+.service-card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin: 0;
+}
+
+/* View All Button */
+.view-all-services {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.view-all-btn:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .core-services-section {
+    padding: 60px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .service-card::after {
+    bottom: -2px;
+    right: -2px;
+  }
+
+  .core-services-section .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .core-services-section {
+    padding: 50px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .service-card::after {
+    bottom: -2px;
+    right: -2px;
+  }
+  .core-services-section .section-title h2 {
+    font-size: 28px;
+  }
+
+  .service-card-title {
+    font-size: 18px;
+  }
+
+  .service-card-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .core-services-section {
+    padding: 40px 0;
+  }
+
+  .core-services-section .section-title h2 {
+    font-size: 24px;
+  }
+
+  .service-card {
+    padding: 21px 16px 24px;
+  }
+
+  .service-card::after {
+    bottom: -1px;
+    right: -1px;
+  }
+
+  .service-card-img {
+    width: 100px;
+    height: 100px;
+    margin-top: -35px;
+  }
+
+  .service-card-title {
+    font-size: 16px;
+  }
+
+  .service-card-subtitle {
+    font-size: 14px;
+  }
+
+  .service-card-desc {
+    font-size: 13px;
+  }
+}

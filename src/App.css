@@ -1,0 +1,60 @@
+:root {
+  --primary-red: #c41e3a;
+  --dark-red: #a01729;
+  --light-gray: #f8f9fa;
+  --dark-bg: #1a1a1a;
+}
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn-primary {
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-red);
+  transform: translateY(-2px);
+}
+
+.text-red {
+  color: var(--primary-red);
+}
+
+/* Section Title - Shared Style */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.section-title h2 span {
+  color: var(--primary-red);
+}
