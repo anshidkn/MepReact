@@ -29,9 +29,9 @@ const CtaSection = () => {
             </p>
 
             <div className="cta-buttons">
-              <Link to="/quote" className="cta-btn cta-btn-primary">
+              {/* <Link to="/quote" className="cta-btn cta-btn-primary">
                 Request a Quote
-              </Link>
+              </Link> */}
               <Link to="/contact" className="cta-btn cta-btn-secondary">
                 Contact Our Team
               </Link>

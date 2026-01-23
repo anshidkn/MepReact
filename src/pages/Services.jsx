@@ -13,7 +13,7 @@ import serviceImg6 from "../assets/service_detail6.png";
 import ServicesHeroSection from "../components/sections/servicessections/ServicesHeroSection";
 import ServicesIntroSection from "../components/sections/servicessections/ServicesIntroSection";
 import ServicesGridSection from "../components/sections/servicessections/ServicesGridSection";
-// import CtaSection from '../components/CtaSection';
+import CtaSection from '../components/CtaSection';
 
 const Services = () => {
   const services = [
@@ -70,7 +70,7 @@ const Services = () => {
       <ServicesGridSection services={services} />
       
       {/* CTA Section - appears on all pages */}
-      {/* <CtaSection /> */}
+      <CtaSection />
 
     </div>
   );

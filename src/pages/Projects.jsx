@@ -19,7 +19,7 @@ import ProjectsIntroSection from "../components/sections/projectssections/Projec
 import ProjectsExperienceSection from "../components/sections/projectssections/ProjectsExperienceSection";
 import ProjectsFeaturedSection from "../components/sections/projectssections/ProjectsFeaturedSection";
 import ProjectsnumbersTrustSection from "../components/sections/projectssections/ProjectsnumbersTrustSection";
-// import ProjectsCtaSection from '../components/ProjectsctaSection';
+import ProjectsCtaSection from '../components/ProjectsctaSection';
 
 
 const Projects = () => {
@@ -128,7 +128,7 @@ const Projects = () => {
       />
       
       {/* CTA Section - appears on all pages */}
-      {/* <ProjectsCtaSection /> */}
+      <ProjectsCtaSection />
 
     </div>
   );
